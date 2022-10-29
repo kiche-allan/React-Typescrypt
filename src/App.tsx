@@ -1,12 +1,32 @@
 
 import './App.css';
 import { Greet } from './components/Greet';
+import { PersonList } from './components/PersoList';
+import { Person } from './components/Person';
 
 function App() {
+  const personName ={
+    first : 'Allan',
+    last : 'Kiche'
+  }
+
+  const nameList = [{
+    first: 'Bruce',
+    last: 'Wayne'}
+    ,{
+    first: 'Clark',
+    last: 'Kent'
+    },{
+    first: 'Diana',
+    last: 'Prince'  
+    }
+  ]
   return (
     <div className="App">
       <div>
-            <Greet name = 'Allan'/>
+            <Greet name = 'Allan' messageCount={20} isLoggedIn = {false}/>
+            <Person name= {personName} />
+            <PersonList names= {nameList} />
         </div>
     </div>
   );
