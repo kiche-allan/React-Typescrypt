@@ -19,6 +19,9 @@ function App() {
     },{
     first: 'Diana',
     last: 'Prince'  
+    },{
+    first: 'Okuna',
+    last: 'Kiche'  
     }
   ]
   return (
