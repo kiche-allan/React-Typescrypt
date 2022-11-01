@@ -1,9 +1,10 @@
 
 import './App.css';
 import { Greet } from './components/Greet';
-import { PersonList } from './components/PersoList';
+import { PersonList } from './components/PersonList';
 import { Person } from './components/Person';
 import { Status } from './components/Status';
+import { Button } from './components/Button';
 
 function App() {
   const personName ={
@@ -32,6 +33,11 @@ function App() {
             <Person name= {personName} />
             <PersonList names= {nameList} />
             <Status status = 'error'/>
+            <Button 
+               handleClick={(event, id) => {
+                console.log('Button Clicked', event, id)
+               }}
+             />
         </div>
     </div>
   );
