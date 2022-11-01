@@ -5,6 +5,8 @@ import { PersonList } from './components/PersonList';
 import { Person } from './components/Person';
 import { Status } from './components/Status';
 import { Button } from './components/Button';
+import { Input } from './components/Input';
+import { Container } from './components/Container';
 
 function App() {
   const personName ={
@@ -37,7 +39,9 @@ function App() {
                handleClick={(event, id) => {
                 console.log('Button Clicked', event, id)
                }}
+            
              />
+             <Container styles = {{border: '1 px solid black', padding: '1rem'}}/>
         </div>
     </div>
   );
