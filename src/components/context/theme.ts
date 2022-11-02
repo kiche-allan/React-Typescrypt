@@ -5,6 +5,6 @@ export const theme = {
     },
     secondary: {
         main: '#f50057',
-        text: 
-    }
+        text: '#fff',
+        },
 }

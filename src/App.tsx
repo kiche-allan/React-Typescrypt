@@ -5,8 +5,9 @@ import { PersonList } from './components/PersonList';
 import { Person } from './components/Person';
 import { Status } from './components/Status';
 import { Button } from './components/Button';
-import { Input } from './components/Input';
+
 import { Container } from './components/Container';
+import {ThemeContextProvier} from './components/context/ThemeContext'
 
 function App() {
   const personName ={
@@ -31,6 +32,9 @@ function App() {
   return (
     <div className="App">
       <div>
+        <ThemeContextProvier>
+          <Box  />
+        </ThemeContextProvier>
             <Greet name = 'Allan' messageCount={20} isLoggedIn = {false}/>
             <Person name= {personName} />
             <PersonList names= {nameList} />
