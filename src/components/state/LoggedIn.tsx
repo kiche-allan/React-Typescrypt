@@ -12,6 +12,6 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
         setIsLoggedIn(false)
     }
     return (
-        <><><button onClick={handleLogin}>Login</button><button onClick={handleLogout}>Logout</button><div>User is Logged In/ Logged Out</div></><div>User is {isLoggedIn ? 'logged in' : 'logged out'}</div></>
+        <><><button onClick={handleLogin}>Login</button><button onClick={handleLogout}>Logout</button><div>User is Logged In/ Logged Ourt</div></><div>User is {isLoggedIn ? 'logged in' : 'logged out'}</div></>
     )
 }
