@@ -8,6 +8,11 @@ import { Button } from './components/Button';
 
 import { Container } from './components/Container';
 import {ThemeContextProvier} from './components/context/ThemeContext'
+import { UserContextProvider } from './components/context/UserContext';
+import { Box } from './components/context/Box';
+import { User } from './components/context/User';
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
 
 function App() {
   const personName ={
@@ -20,7 +25,7 @@ function App() {
     last: 'Wayne'}
     ,{
     first: 'Clark',
-    last: 'Kent'
+    last: 'Kent' 
     },{
     first: 'Diana',
     last: 'Prince'  
@@ -46,6 +51,10 @@ function App() {
             
              />
              <Container styles = {{border: '1 px solid black', padding: '1rem'}}/>
+             <UserContextProvider>
+                <User />
+             </UserContextProvider>
+        <Private isLoggedIn={true} Component={Profile} />
         </div>
     </div>
   );

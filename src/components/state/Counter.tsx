@@ -26,7 +26,8 @@ export const Counter = () => {
         <>
             Count: {state.count}
             <button onClick={() => dispatch({type: 'increment', payload: 10})}>Incrementr 10</button>
-            <button onClick={() => dispatch({type: 'decrement', payload: 10})}>Decrement 10</button>
+            <button onClick={() => dispatch({type: 'decrement', payload: 10})}>Decrement eyeyey 10</button>
+            <button onClick={() => dispatch({type: 'reset', payload: 0})}>Reset</button>
         </>
     )
 }
