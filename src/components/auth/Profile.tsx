@@ -3,5 +3,5 @@ export type ProfileProps = {
 }
 
 export const Profile = () => {
-    return <div>Private Profile Component. Name is {name}</div>
+    return (<div>Private Profile Component. Name is {name}</div>)
 }
