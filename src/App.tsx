@@ -13,6 +13,7 @@ import { Box } from './components/context/Box';
 import { User } from './components/context/User';
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
+import { List } from './components/generics/List';
 
 function App() {
   const personName ={
@@ -55,6 +56,10 @@ function App() {
                 <User />
              </UserContextProvider>
         <Private isLoggedIn={true} Component={Profile} />
+        <List items={['Batman', 'Superman', 'Wonder Woman']} onClick={function (item): VoidFunction {
+          throw new Error('Function not implemented.');
+        } } />
+        <List items={[1, 2, 3]} onClick = {(item) => console.log(item)}/>
         </div>
     </div>
   );
